@@ -6,12 +6,12 @@ explore: aggregate_then_join {}
 
 #20181121 datagroup dependency test
 datagroup: dg_1 {
-  sql_trigger: select current_date() ;;
+  sql_trigger: select cast(now() as date) ;;
 }
 
 view: dt_1 {
   derived_table: {
-    sql: select current_time() as t ;;
+    sql: select select now() as t ;;
     datagroup_trigger: dg_1
     distribution_style: all
 

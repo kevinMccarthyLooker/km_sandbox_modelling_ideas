@@ -134,6 +134,16 @@ extends: [variables_and_templates]
       value: "not null"
     }
   }
+
+  measure: min_created {
+    type: date
+    sql: min(${created_date}) ;;
+
+  }
+  measure: max_created {
+    type: date
+    sql: max(${created_date}) ;;
+  }
 }
 
 #this would be the way to create a standalone suggestions, for fast lookup when no other filters or joins matter...

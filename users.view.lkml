@@ -136,11 +136,13 @@ extends: [variables_and_templates]
   }
 
   measure: min_created {
+    convert_tz: no
     type: date
     sql: min(${created_date}) ;;
 
   }
   measure: max_created {
+    convert_tz: no
     type: date
     sql: max(${created_date}) ;;
   }

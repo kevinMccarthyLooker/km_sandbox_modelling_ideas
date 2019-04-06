@@ -7,4 +7,5 @@ explore: users {
   label: "Users (Basic)"
   fields: [ALL_FIELDS*,-users.id]
   extends: [users_base]
+  join: order_items {relationship:one_to_many}
 }

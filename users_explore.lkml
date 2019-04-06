@@ -18,7 +18,7 @@ explore: users_base {
   # fields: [ALL_FIELDS*,-artists.user_id]
   join: order_items {
     type: left_outer
-    relationship: many_to_one
+    relationship: one_to_many
     sql_on: ${users.id} = ${order_items.user_id};;
   }
 

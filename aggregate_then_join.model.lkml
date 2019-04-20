@@ -12,8 +12,8 @@ datagroup: dg_1 {
 view: dt_1 {
   derived_table: {
     sql: select select now() as t ;;
-    datagroup_trigger: dg_1
-    distribution_style: all
+#     datagroup_trigger: dg_1
+#     distribution_style: all
 
   }
 }
@@ -25,8 +25,8 @@ datagroup: dg_2 {
 view: dt_2 {
   derived_table: {
     sql: select 1 as a_number ;;
-    datagroup_trigger: dg_2
-    distribution_style: all
+#     datagroup_trigger: dg_2
+#     distribution_style: all
   }
 }
 

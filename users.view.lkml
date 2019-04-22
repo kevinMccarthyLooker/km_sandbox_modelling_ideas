@@ -82,6 +82,10 @@ extends: [variables_and_templates]
     sql: ${TABLE}.email ;;
   }
 
+  dimension: test_dummy_email {
+    sql: 'kevin.mccarthy'||${1dk_user_id}||'@looker.com' ;;
+  }
+
   dimension: first_name {
     type: string
     sql: ${TABLE}.first_name ;;

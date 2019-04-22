@@ -83,7 +83,7 @@ extends: [variables_and_templates]
   }
 
   dimension: test_dummy_email {
-    sql: 'kevin.mccarthy'||${1dk_user_id}||'@looker.com' ;;
+    sql: 'kevin.mccarthy+'||${1dk_user_id}||'@looker.com' ;;
   }
   measure: list_emails {
     type: list
